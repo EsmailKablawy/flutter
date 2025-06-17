@@ -1,4 +1,4 @@
-# event_app
+# event
 
 A new Flutter project.
 
