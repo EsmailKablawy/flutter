@@ -1,4 +1,3 @@
-import 'package:event/core/helpers/extensions.dart';
 import 'package:event/features/chat/ui/widgets/chat_view_body.dart';
 import 'package:flutter/material.dart';
 
