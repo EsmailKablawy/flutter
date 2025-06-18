@@ -89,6 +89,8 @@ dependencies:
   badges: ^3.1.2
   modal_bottom_sheet: ^3.0.0
   curved_navigation_bar: ^1.0.6
+  flutter_advanced_switch: ^3.1.0
+  share_plus: ^11.0.0
 
 dev_dependencies:
   flutter_test:

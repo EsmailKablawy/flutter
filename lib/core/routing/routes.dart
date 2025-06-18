@@ -24,6 +24,13 @@ class AppRoute {
   //instrucorMainScreen
   static const String instrucorMainScreen = '/instrucorMainScreen';
 
+  static const profileView = '/profileView';
+  static const notificationView = '/notificationView';
+  static const favoriteView = '/favoriteView';
+  static const chatView = '/chatView';
+  static const reservationView = '/reservationView';
+  static const editReservationView = '/editReservationView';
+
   //Selfie Instruction
   static const String editProfileScreen = '/editProfileScreen';
   //personalInformatoinScreen

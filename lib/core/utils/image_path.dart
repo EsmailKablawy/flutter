@@ -1,8 +1,29 @@
 abstract class ImagePath {
   static const logo = 'assets/images/logo.svg';
+  static const facebook = 'assets/images/facebook.svg';
+  static const google = 'assets/images/google.svg';
+  static const apple = 'assets/images/apple.svg';
   static const lock = 'assets/icons/lock.svg';
   static const email = 'assets/icons/email.svg';
   static const phone = 'assets/icons/phone.svg';
   static const user = 'assets/icons/user.svg';
+  static const setting = 'assets/icons/setting.svg';
+  static const chat = 'assets/icons/chat.svg';
+  static const creditCard = 'assets/icons/credit_card.svg';
+  static const diamond = 'assets/icons/diamond.svg';
+  static const favourite = 'assets/icons/favourite.svg';
+  static const globe = 'assets/icons/globe.svg';
+  static const logout = 'assets/icons/logout.svg';
+  static const notification = 'assets/icons/notification.svg';
+  static const reservationOrders = 'assets/icons/reservation_orders.svg';
+  static const share = 'assets/icons/share.svg';
+  static const userSupport = 'assets/icons/user_support.svg';
+  static const edit = 'assets/images/edit.png';
+  static const profileImage = 'assets/images/profile_image.png';
+  static const notificationImg = 'assets/images/notification_img.png';
+  static const avatar1 = 'assets/images/avatar1.png';
+  static const favoriteStar = 'assets/images/favorite_star.png';
   static const visibilityOff = 'assets/icons/visibility_off.svg';
+  static const productImage = 'assets/images/product_image.png';
+  static const noChatImage = 'assets/images/no_chat_img.png';
 }
