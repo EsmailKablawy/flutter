@@ -10,7 +10,6 @@ class CustomIconButtonWithOpacity extends StatelessWidget {
   final Function()? onTap;
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
     return GestureDetector(
       onTap: onTap,
       child: Container(

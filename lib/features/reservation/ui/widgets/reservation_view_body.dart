@@ -1,7 +1,6 @@
 import 'package:event/core/helpers/extensions.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/widget/custom_app_bar.dart';
 import '../../../../core/widget/custom_grid_view.dart';
 import '../../../../core/widget/filter_tabs.dart';
 
