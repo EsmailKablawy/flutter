@@ -18,8 +18,6 @@ class CustomChatItem extends StatelessWidget {
   final String image;
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
-
     return SizedBox(
       height: context.displayWidth * 0.24,
       child: Padding(

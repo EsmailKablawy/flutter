@@ -3,7 +3,6 @@ import 'package:event/core/helpers/spacing.dart';
 import 'package:event/features/chat/ui/widgets/custom_chat_list_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/widget/custom_app_bar.dart';
 import '../../../../core/widget/filter_tabs.dart';
 
 class ChatViewBody extends StatelessWidget {

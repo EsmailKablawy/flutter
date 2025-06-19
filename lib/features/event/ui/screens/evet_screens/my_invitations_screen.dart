@@ -4,9 +4,7 @@ import 'package:event/core/thems/thems.dart';
 import 'package:event/core/widget/animated_svg_icon.dart';
 import 'package:event/core/widget/center_text_utils.dart';
 import 'package:event/core/widget/slide_enimation_widget.dart';
-import 'package:event/core/widget/text_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class MyInvitationsScreen extends StatelessWidget {
   const MyInvitationsScreen({super.key});

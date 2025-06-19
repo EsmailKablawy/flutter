@@ -1,9 +1,7 @@
 import 'package:event/core/helpers/extensions.dart';
-import 'package:event/core/helpers/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../thems/thems.dart';
-import 'animated_svg_icon.dart';
 import 'text_utils.dart';
 
 PreferredSizeWidget appBarUtils(

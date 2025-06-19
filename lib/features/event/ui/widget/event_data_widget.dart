@@ -1,5 +1,4 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:event/core/helpers/extensions.dart';
 import 'package:event/core/thems/thems.dart';
 import 'package:event/core/widget/text_utils.dart';
 import 'package:event/features/event/ui/screens/evet_screens/my_invitations_screen.dart';

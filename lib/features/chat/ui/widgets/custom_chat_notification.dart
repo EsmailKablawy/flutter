@@ -19,7 +19,6 @@ class CustomNotificationButton extends StatelessWidget {
   final bool isAccept;
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
     return Container(
       height: context.displayWidth * 0.06,
       width: context.displayWidth * 0.06,
