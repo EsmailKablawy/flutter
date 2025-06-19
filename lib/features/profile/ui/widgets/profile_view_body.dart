@@ -2,13 +2,11 @@ import 'package:event/core/helpers/extensions.dart';
 import 'package:event/core/helpers/spacing.dart';
 import 'package:event/core/widget/animated_svg_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../../../core/routing/routes.dart';
 import '../../../../core/utils/image_path.dart';
 
-import '../../../../core/widget/custom_app_bar.dart';
 import '../../../../core/widget/custom_border_button.dart';
 import 'custom_profile_details.dart';
 import 'custom_profile_item.dart';
