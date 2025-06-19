@@ -6,6 +6,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../../core/routing/app_router.dart';
 import '../../../../core/thems/thems.dart';
+import '../../../../core/widget/animated_svg_icon.dart';
 import '../../../../core/widget/text_utils.dart';
 import '../widget/bottom_nav_bar_animation.dart';
 

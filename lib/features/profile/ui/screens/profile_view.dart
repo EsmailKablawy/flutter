@@ -1,6 +1,6 @@
+import 'package:event/core/widget/main_app_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/utils/colors.dart';
 import '../widgets/profile_view_body.dart';
 
 class ProfileView extends StatelessWidget {
@@ -8,9 +8,8 @@ class ProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
-
-    return const Scaffold(
-        backgroundColor: kBackgroundColor, body: ProfileViewBody());
+    return Scaffold(
+        appBar: mainAppBar(context: context, title: ''),
+        body: const ProfileViewBody());
   }
 }

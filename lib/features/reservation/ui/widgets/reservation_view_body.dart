@@ -10,30 +10,11 @@ class ReservationViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
-
     return SafeArea(
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
               child: SizedBox(height: context.displayWidth * 0.08)),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: context.displayWidth * 0.045),
-              child: CustomAppBar(
-                hasText: true,
-                text: 'إدارة الحجوزات',
-                icon: const Icon(Icons.search),
-                onRightTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-            ),
-          ),
-          SliverToBoxAdapter(
-              child: SizedBox(height: context.displayWidth * 0.08)),
-
           SliverToBoxAdapter(
             child: SizedBox(
               height: context.displayWidth * 0.1,
@@ -45,20 +26,6 @@ class ReservationViewBody extends StatelessWidget {
           ),
           SliverToBoxAdapter(
               child: SizedBox(height: context.displayWidth * 0.08)),
-
-          // SliverFillRemaining(
-          //   hasScrollBody: false,
-          //
-          //   child:
-          //       CustomNoItemsBody(
-          //         imagePath: ImagePath.favoriteStar,
-          //         title: 'لاتوجد منتجات مفضلة الان !',
-          //         subTitle:
-          //             'لا توجد عناصر مفضلة حتى الآن. أضف منتجاتك المفضلة لتسهيل الوصول إليها لاحقًا',
-          //         hasButton: true,
-          //         buttonText: 'العودة الي الرئيسية',
-          //       ),
-          // ),
           const SliverToBoxAdapter(child: CustomGridView()),
         ],
       ),

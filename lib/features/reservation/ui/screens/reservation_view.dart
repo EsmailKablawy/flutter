@@ -1,7 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:event/core/routing/routes.dart';
+import 'package:event/core/widget/app_bar_utils.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/utils/colors.dart';
 import '../widgets/custom_floating_action_button.dart';
 import '../widgets/reservation_view_body.dart';
 
@@ -11,7 +12,7 @@ class ReservationView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kBackgroundColor,
+      appBar: appBarUtils(context: context, title: 'إدارة الحجوزات'.tr()),
       body: const ReservationViewBody(),
       floatingActionButton: CustomFloatingActionButton(
         text: 'اضافة خدمة',

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'custom_grid_view_item.dart';
 
@@ -13,15 +14,16 @@ class CustomGridView extends StatelessWidget {
       shrinkWrap: true,
       padding: EdgeInsets.symmetric(horizontal: width * 0.045),
       physics: const NeverScrollableScrollPhysics(),
-      itemCount: 10,
+      itemCount: 3,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        childAspectRatio: 3 / 4,
-        crossAxisSpacing: width * 0.01,
-        mainAxisSpacing: width * 0.01,
-      ),
+          crossAxisCount: 2,
+          crossAxisSpacing: 20.w,
+          mainAxisSpacing: 20.w,
+          mainAxisExtent: 220.w),
       itemBuilder: (context, index) {
-        return  CustomGridViewItem(index: index,);
+        return CustomGridViewItem(
+          index: index,
+        );
       },
     );
   }

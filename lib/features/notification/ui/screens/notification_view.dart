@@ -1,6 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
+import 'package:event/core/widget/app_bar_utils.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/utils/colors.dart';
 import '../widgets/notification_view_body.dart';
 
 class NotificationView extends StatelessWidget {
@@ -8,9 +9,9 @@ class NotificationView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: kBackgroundColor,
-      body: NotificationViewBody(),
+    return Scaffold(
+      appBar: appBarUtils(context: context, title: 'الاشعارات'.tr()),
+      body: const NotificationViewBody(),
     );
   }
 }

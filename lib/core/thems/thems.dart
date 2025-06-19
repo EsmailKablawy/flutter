@@ -38,7 +38,7 @@ const Color greyClr = Color(0xFFC9C9C9); //background: #;
 const Color starGreyClr = Color(0xFFB0BEC5);
 
 const Color greyopacutyClr = Color(0xFFF1F5F9);
-const Color offWhiteClr = Color(0xFFF2F4F8);
+const Color offWhiteClr = Color(0xFFF5F6FA); //background: #;
 
 const Color offGreenClr = Color(0xFFF4F7EF);
 

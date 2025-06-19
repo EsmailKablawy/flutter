@@ -17,7 +17,6 @@ class CustomGridViewItem extends StatelessWidget {
   final int index;
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
     return AnimateBuilder(
       columnCount: 2,
       position: index,

@@ -1,5 +1,9 @@
+import 'package:event/core/helpers/extensions.dart';
+import 'package:event/core/helpers/spacing.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../thems/thems.dart';
+import 'animated_svg_icon.dart';
 import 'text_utils.dart';
 
 PreferredSizeWidget appBarUtils(
@@ -7,6 +11,22 @@ PreferredSizeWidget appBarUtils(
   return AppBar(
     centerTitle: true,
     backgroundColor: whiteclr,
+    leading: Row(
+      children: [
+        const Spacer(),
+        GestureDetector(
+          onTap: () {
+            context.pop();
+          },
+          child: Container(
+            padding: EdgeInsets.all(12.w),
+            decoration:
+                const BoxDecoration(color: offWhiteClr, shape: BoxShape.circle),
+            child: const Center(child: Icon(Icons.arrow_back_outlined)),
+          ),
+        ),
+      ],
+    ),
     title: TextAppBarUtils(
         fontSize: 20,
         fontWeight: FontWeight.w700,

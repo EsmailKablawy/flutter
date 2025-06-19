@@ -1,4 +1,6 @@
+import 'package:event/core/helpers/extensions.dart';
 import 'package:event/core/helpers/spacing.dart';
+import 'package:event/core/widget/animated_svg_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:share_plus/share_plus.dart';
@@ -29,14 +31,6 @@ class ProfileViewBody extends StatelessWidget {
         slivers: [
           SliverList.list(
             children: [
-              verticalSpace(20),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: width * 0.045),
-                child: CustomAppBar(
-                  icon: SvgPicture.asset(ImagePath.setting),
-                  onRightTap: () {},
-                ),
-              ),
               const CustomProfileDetails(
                 image: ImagePath.profileImage,
                 hasIcon: true,
@@ -82,11 +76,11 @@ class ProfileViewBody extends StatelessWidget {
                       Navigator.pushNamed(context, AppRoute.reservationView);
                     },
                   ),
-                  CustomProfileItem(
+                  const CustomProfileItem(
                     text: 'اضافة بطاقة الدفع',
                     iconPath: ImagePath.creditCard,
                   ),
-                  CustomProfileItem(
+                  const CustomProfileItem(
                     text: 'عضوية العميل',
                     iconPath: ImagePath.diamond,
                   ),
@@ -114,10 +108,14 @@ class ProfileViewBody extends StatelessWidget {
               CustomBorderButton(
                 text: 'تسجيل خروج',
                 icon: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                  child: SvgPicture.asset(ImagePath.logout),
-                ),
-                onTap: () {},
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                    child: AnimatedSvgIcon(iconPath: 'assets/svgs/logout.svg')),
+                onTap: () {
+                  context.pushNamedAndRemoveUntil(
+                    AppRoute.signUpScreen,
+                    predicate: (route) => false,
+                  );
+                },
               ),
             ],
           ),

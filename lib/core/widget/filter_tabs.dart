@@ -1,3 +1,4 @@
+import 'package:event/core/widget/anmiate_builder.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
@@ -39,12 +40,24 @@ class _FilterTabsState extends State<FilterTabs> {
             });
             widget.onTabSelected?.call(index);
           },
-          child: CustomTab(
-            text: widget.tabs[index],
-            textColor: isSelected ? kPrimaryColor : kTextGrey,
-            backgroundColor:
-                isSelected ? kPrimaryColor.withOpacity(0.2) : kIconButton,
-          ),
+          child: isSelected
+              ? AnimateBuilder(
+                  columnCount: 1,
+                  position: 0,
+                  child: CustomTab(
+                    text: widget.tabs[index],
+                    textColor: isSelected ? kPrimaryColor : kTextGrey,
+                    backgroundColor: isSelected
+                        ? kPrimaryColor.withOpacity(0.2)
+                        : kIconButton,
+                  ),
+                )
+              : CustomTab(
+                  text: widget.tabs[index],
+                  textColor: isSelected ? kPrimaryColor : kTextGrey,
+                  backgroundColor:
+                      isSelected ? kPrimaryColor.withOpacity(0.2) : kIconButton,
+                ),
         );
       },
     );

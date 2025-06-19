@@ -9,12 +9,14 @@ class AnimatedSvgIcon extends StatefulWidget {
   final VoidCallback? onTap; // Callback for tap event
   final Widget? titleWidget;
   bool isDarkMode = false;
+  final Color? color;
 
   AnimatedSvgIcon({
     super.key,
     required this.iconPath,
     this.onTap,
     this.titleWidget,
+    this.color,
   });
 
   @override
@@ -69,7 +71,10 @@ class _AnimatedSvgIconState extends State<AnimatedSvgIcon>
       child: widget.titleWidget == null
           ? ScaleTransition(
               scale: _animation,
-              child: SvgPicture.asset(widget.iconPath),
+              child: SvgPicture.asset(
+                widget.iconPath,
+                color: widget.color,
+              ),
             )
           : Row(
               children: [

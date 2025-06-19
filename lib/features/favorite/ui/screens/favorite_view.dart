@@ -1,6 +1,6 @@
+import 'package:event/core/widget/app_bar_utils.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/utils/colors.dart';
 import '../widgets/favorite_view_body.dart';
 
 class FavoriteView extends StatelessWidget {
@@ -8,9 +8,9 @@ class FavoriteView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: kBackgroundColor,
-      body: FavoriteViewBody(),
+    return Scaffold(
+      appBar: appBarUtils(context: context, title: 'المفضلة'),
+      body: const FavoriteViewBody(),
     );
   }
 }

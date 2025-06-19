@@ -1,4 +1,5 @@
 import 'package:event/core/helpers/extensions.dart';
+import 'package:event/core/helpers/spacing.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/widget/custom_app_bar.dart';
@@ -10,28 +11,10 @@ class EditReservationViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.sizeOf(context).width;
-
     return SafeArea(
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
-              child: SizedBox(height: context.displayWidth * 0.08)),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: context.displayWidth * 0.045),
-              child: CustomAppBar(
-                hasText: true,
-                text: 'تعديل تفاصيل الحجز',
-                onRightTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-            ),
-          ),
-          SliverToBoxAdapter(
-              child: SizedBox(height: context.displayWidth * 0.08)),
+          SliverToBoxAdapter(child: verticalSpace(10)),
           SliverToBoxAdapter(
             child: SizedBox(
               height: context.displayWidth * 0.1,
