@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen>
             // ignore: use_build_context_synchronously
             log(EasyLocalization.of(context)!.locale.toString());
             CacheHelper.savelang('ar');
-            print('Tooooooooooken$userToken');
+            // ignore: use_build_context_synchronously
             context.pushNamedAndRemoveUntil(
               AppRoute.signUpScreen,
               predicate: (route) => false,
