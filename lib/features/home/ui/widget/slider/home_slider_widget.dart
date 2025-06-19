@@ -1,14 +1,10 @@
-import 'dart:ui';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 import 'package:event/core/helpers/extensions.dart';
 import 'package:event/core/helpers/spacing.dart';
-import 'package:event/core/widget/padding_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../../core/thems/thems.dart';
 import '../../../../../core/widget/text_utils.dart';

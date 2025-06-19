@@ -1,7 +1,6 @@
 import 'package:event/core/helpers/spacing.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/widget/custom_app_bar.dart';
 import '../../../../core/widget/filter_tabs.dart';
 import 'custom_notification_list_view.dart';
 
@@ -20,7 +19,7 @@ class NotificationViewBody extends StatelessWidget {
             child: SizedBox(
               height: width * 0.1,
               child: FilterTabs(
-                tabs: ['الكل', 'مقروءة', 'غير مقروءة'],
+                tabs: const ['الكل', 'مقروءة', 'غير مقروءة'],
                 onTabSelected: (index) {},
               ),
             ),

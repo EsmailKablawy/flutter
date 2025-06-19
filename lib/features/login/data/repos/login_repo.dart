@@ -6,8 +6,6 @@ import '../models/instructor_response.dart';
 import '../models/login_request_body.dart';
 import '../models/login_response.dart';
 import '../models/send_verification_code.dart';
-import '../models/verify_request_body.dart';
-import '../models/verify_response.dart';
 
 class LoginRepo {
   final ApiService _apiService;

@@ -1,9 +1,9 @@
 import 'dart:math';
 
+// ignore: implementation_imports
 import 'package:curved_navigation_bar/src/nav_custom_clipper.dart';
 import 'package:event/core/thems/thems.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'nav.dart';
 import 'nav_button_animation.dart';
 
