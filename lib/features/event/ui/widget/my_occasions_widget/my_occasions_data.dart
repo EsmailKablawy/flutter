@@ -19,9 +19,8 @@ class MyOccasionsData extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(
-            child: Image.asset('assets/images/Group 33350.png'),
-          ),
+          Image.asset('assets/images/Group 33350.png',
+              width: 60.w, height: 60.w, fit: BoxFit.cover),
           horizontalSpace(10),
           Expanded(
             flex: 3,

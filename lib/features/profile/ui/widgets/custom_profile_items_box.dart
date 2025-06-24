@@ -11,7 +11,6 @@ class CustomProfileItemsBox extends StatelessWidget {
     final width = MediaQuery.sizeOf(context).width;
     return Container(
       margin: EdgeInsets.symmetric(horizontal: width * 0.045),
-
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: kTextGrey.withOpacity(0.15)),
@@ -20,7 +19,7 @@ class CustomProfileItemsBox extends StatelessWidget {
             color: Colors.grey.withOpacity(0.1),
             blurRadius: 4,
             spreadRadius: 5,
-            offset: Offset(0, 0),
+            offset: const Offset(0, 0),
           ),
         ],
       ),

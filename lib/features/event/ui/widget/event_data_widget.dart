@@ -105,7 +105,7 @@ class _EventDataWidgetState extends State<EventDataWidget> {
             bottom: 10.w,
             start: 20,
             end: 20,
-            child: Padding(
+            child: Container(
               padding: paddingNavBar(),
               child: ButtonUtils(
                   text: 'انشاء مناسبة جديدة',

@@ -18,12 +18,12 @@ class HomeSliderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 450.w,
+      height: 350.w,
       width: context.displayWidth / 1,
       child: CarouselSlider.builder(
         itemCount: 3,
         options: CarouselOptions(
-          height: 450.w,
+          height: 350.w,
           autoPlay: true,
           enlargeCenterPage: true,
           enableInfiniteScroll: false,

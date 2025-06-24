@@ -47,7 +47,7 @@ class MyServiceWidget extends StatelessWidget {
         verticalSpace(10),
         GridView.builder(
           shrinkWrap: true,
-          itemCount: 4,
+          itemCount: 6,
           padding: const EdgeInsets.all(0),
           physics: const NeverScrollableScrollPhysics(),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
