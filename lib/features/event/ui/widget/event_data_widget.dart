@@ -15,10 +15,6 @@ enum Sky {
   viridian,
 }
 
-Map<Sky, Color> skyColors = <Sky, Color>{
-  Sky.midnight: mainColor.withOpacity(0.2),
-  Sky.viridian: mainColor.withOpacity(0.2),
-};
 Map<Sky, Color> sky2Colors = <Sky, Color>{};
 
 class EventDataWidget extends StatefulWidget {
