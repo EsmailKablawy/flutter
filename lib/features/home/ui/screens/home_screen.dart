@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import '../widget/events_widget.dart';
 import '../widget/my_service_widget.dart';
 import '../widget/new_arrive_widget.dart';
-import '../widget/suggest_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

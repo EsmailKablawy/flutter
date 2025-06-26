@@ -1,5 +1,4 @@
 import 'package:animations/animations.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:event/core/helpers/spacing.dart';
 
 import 'package:flutter/material.dart';
@@ -39,7 +38,8 @@ class MyOccasionsScreen extends StatelessWidget {
                         )),
                     verticalSpace(12)
                   ],
-                ), // بيعرض العناصر عند الحاجة فقط
+                ),
+                // بيعرض العناصر عند الحاجة فقط
                 childCount: 12,
               ),
             ),
