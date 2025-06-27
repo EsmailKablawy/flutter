@@ -79,6 +79,7 @@ class TextFromFieldUtilsWidget extends StatelessWidget {
       validator: validator,
       textInputAction: textInputAction,
       decoration: _inputDecoration(),
+      onTapOutside: (event) => FocusScope.of(context).unfocus(),
     );
   }
 }

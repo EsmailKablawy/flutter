@@ -1,13 +1,16 @@
+import 'package:animations/animations.dart';
 import 'package:easy_localization/easy_localization.dart';
+
 import 'package:event/core/thems/thems.dart';
+import 'package:event/core/widget/center_text_utils.dart';
 import 'package:event/core/widget/text_utils.dart';
+import 'package:event/features/event/ui/screens/create_event/create_event_screen.dart';
 import 'package:event/features/event/ui/screens/evet_screens/my_invitations_screen.dart';
 import 'package:event/features/event/ui/screens/evet_screens/my_occasions_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/widget/button_utils.dart';
 import '../../../../core/widget/padding_nav_bar.dart';
 
 enum Sky {
@@ -107,11 +110,37 @@ class _EventDataWidgetState extends State<EventDataWidget> {
             end: 20,
             child: Container(
               padding: paddingNavBar(),
-              child: ButtonUtils(
-                  text: 'انشاء مناسبة جديدة',
-                  onPressed: () {},
-                  colorstext: Colors.white,
-                  background: mainColor),
+              child: OpenContainer(
+                transitionDuration: const Duration(milliseconds: 700),
+                transitionType: ContainerTransitionType.fadeThrough,
+                closedElevation: 0,
+                openElevation: 0,
+                closedColor: Colors.transparent,
+                closedBuilder: (context, action) {
+                  return Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 20.w, vertical: 13.w),
+                    decoration: BoxDecoration(
+                        color: mainColor,
+                        borderRadius: BorderRadius.circular(48)),
+                    child: CenterTextUtils(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                        text: 'انشاء مناسبة'.tr()),
+                  );
+                },
+                openBuilder: (context, action) {
+                  return const CreateEventScreen();
+                },
+              ),
+              //  ButtonUtils(
+              //     text: 'انشاء مناسبة جديدة',
+              //     onPressed: () {
+              //       context.pushNamed(AppRoute.createEventScreen);
+              //     },
+              //     colorstext: Colors.white,
+              //     background: mainColor),
             ))
       ],
     );

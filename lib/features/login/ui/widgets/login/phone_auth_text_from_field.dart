@@ -36,6 +36,8 @@ class PhoneAuthTextFormField extends StatelessWidget {
     return BlocBuilder<LoginCubit, LoginState>(
       builder: (context, state) {
         return TextFormField(
+          textInputAction: TextInputAction.next,
+          onTapOutside: (event) => FocusScope.of(context).unfocus(),
           textDirection: TextDirection.ltr,
           style: GoogleFonts.cairo(
             color: Colors.black,

@@ -1,3 +1,4 @@
+import 'package:event/features/event/ui/screens/create_event/create_event_screen.dart';
 import 'package:event/features/forget_password/cubit/forget_password_cubit.dart';
 import 'package:event/features/profile/ui/screens/profile_view.dart';
 import 'package:event/features/sign_up/ui/screens/sign_up_screen.dart';
@@ -95,6 +96,9 @@ class AppRouter {
       case AppRoute.editReservationView:
         return CupertinoPageRoute(
             builder: (context) => const EditReservationView());
+      case AppRoute.createEventScreen:
+        return CupertinoPageRoute(
+            builder: (context) => const CreateEventScreen());
 
       // case AppRoute.mainScreen:
       //   return MaterialWithModalsPageRoute(

@@ -32,7 +32,7 @@ class AppRoute {
   static const editReservationView = '/editReservationView';
 
   //Selfie Instruction
-  static const String editProfileScreen = '/editProfileScreen';
+  static const String createEventScreen = '/createEventScreen';
   //personalInformatoinScreen
   static const String personalInformatoinScreen = '/personalInformatoinScreen';
   //driver status
