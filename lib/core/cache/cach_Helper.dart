@@ -164,7 +164,6 @@ class CacheHelper {
       // Convert the integer back to a Color object
       return Color(colorValue);
     } catch (e) {
-      print("Error retrieving color: $e");
       return Colors.white; // Default to white if an error occurs
     }
   }
