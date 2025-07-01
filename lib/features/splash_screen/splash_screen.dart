@@ -4,7 +4,6 @@ import 'dart:developer';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:event/core/helpers/extensions.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../../core/cache/cach_Helper.dart';
 import '../../core/helpers/constants.dart';
