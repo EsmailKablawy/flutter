@@ -1,20 +1,22 @@
+import 'package:event/core/widget/center_text_utils.dart' show CenterTextUtils;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../thems/thems.dart';
-import 'text_utils.dart';
 
 class ButtonUtils extends StatelessWidget {
   final Color colorstext;
   final Color background;
   final String text;
   final Function() onPressed;
+  final String? sameBorder;
   const ButtonUtils(
       {required this.text,
       required this.onPressed,
       super.key,
       required this.colorstext,
-      required this.background});
+      required this.background,
+      this.sameBorder});
 
   @override
   Widget build(BuildContext context) {
@@ -24,21 +26,22 @@ class ButtonUtils extends StatelessWidget {
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               elevation: 0,
-              minimumSize: Size(300.w, 50.w),
+              minimumSize: Size(300.w, 45.w),
               backgroundColor: background,
               shape: RoundedRectangleBorder(
                   side: BorderSide(
-                      color: background == greyClr
-                          ? greyClr
-                          : background == offWhiteClr
-                              ? offWhiteClr
-                              : background),
-                  borderRadius: BorderRadius.circular(48))),
+                      color: sameBorder == null
+                          ? background == greyClr
+                              ? greyClr
+                              : mainColor
+                          : background),
+                  borderRadius: BorderRadius.circular(14))),
           onPressed: onPressed,
-          child: TextUtils(
+          child: CenterTextUtils(
               fontSize: 16,
-              fontWeight: FontWeight.w500,
-              color: colorstext,
+              fontWeight:
+                  colorstext == mainColor ? FontWeight.w500 : FontWeight.w700,
+              color: background == greyClr ? dark : colorstext,
               text: text)),
     );
   }

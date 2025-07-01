@@ -20,7 +20,7 @@ class ForgetPasswordScreen extends StatelessWidget {
         appBar: AppBar(
           actions: [
             AnimatedSvgIcon(
-              iconPath: 'assets/svgs/Logo-2.svg',
+              iconPath: 'assets/svgs/logo.svg',
             ),
             horizontalSpace(20),
           ],

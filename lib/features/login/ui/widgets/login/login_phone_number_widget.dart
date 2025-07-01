@@ -54,7 +54,10 @@ class LoginPhoneNumberWidget extends StatelessWidget {
                           ),
 
                           horizontalSpace(5),
-                          SvgPicture.asset('assets/svgs/Icons-2.svg')
+                          SvgPicture.asset(
+                            'assets/svgs/Icons-2.svg',
+                            color: mainColor,
+                          )
                           //icon
                         ],
                       ),
@@ -72,7 +75,10 @@ class LoginPhoneNumberWidget extends StatelessWidget {
                 hintText: 'رقم الهاتف'.tr(),
                 suffix: Padding(
                   padding: const EdgeInsets.all(12),
-                  child: SvgPicture.asset('assets/svgs/phoneIcons.svg'),
+                  child: SvgPicture.asset(
+                    color: mainColor,
+                    'assets/svgs/phone_icon_new.svg',
+                  ),
                 ),
               )),
             ],

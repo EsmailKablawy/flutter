@@ -29,7 +29,7 @@ class EventsWidget extends StatelessWidget {
         ),
         verticalSpace(10),
         SizedBox(
-          height: 120.w,
+          height: 110.w,
           width: context.displayWidth / 1,
           child: ListView.builder(
             shrinkWrap: true,
@@ -48,8 +48,8 @@ class EventsWidget extends StatelessWidget {
                         children: [
                           //
                           Container(
-                            width: 90.w,
-                            height: 90.w,
+                            width: 75.w,
+                            height: 75.w,
                             decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                                 image: DecorationImage(

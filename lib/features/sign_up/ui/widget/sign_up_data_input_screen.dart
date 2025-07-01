@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../core/helpers/spacing.dart';
+import '../../../../core/thems/thems.dart';
 import '../../../../core/widget/anmiate_builder.dart';
 import '../../../../core/widget/text_from_field_utils_widget.dart';
 import '../../../../core/widget/text_utils.dart';
@@ -33,7 +34,8 @@ class SignUpDataInputScreen extends StatelessWidget {
           child: TextFromFieldUtilsWidget(
               prefix: Padding(
                 padding: EdgeInsets.all(13.w),
-                child: SvgPicture.asset('assets/svgs/user.svg'),
+                child:
+                    SvgPicture.asset(color: mainColor, 'assets/svgs/user.svg'),
               ),
               controller: context.read<LoginCubit>().controller.name,
               obscureText: false,
@@ -56,7 +58,8 @@ class SignUpDataInputScreen extends StatelessWidget {
           child: TextFromFieldUtilsWidget(
               prefix: Padding(
                 padding: EdgeInsets.all(13.w),
-                child: SvgPicture.asset('assets/svgs/mail.svg'),
+                child:
+                    SvgPicture.asset(color: mainColor, 'assets/svgs/mail.svg'),
               ),
               controller: context.read<LoginCubit>().controller.email,
               obscureText: false,

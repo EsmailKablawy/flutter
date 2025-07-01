@@ -16,6 +16,8 @@ import '../../features/login/ui/screens/login_screen.dart';
 import '../../features/main_screen/ui/screen/main_screen.dart';
 
 import '../../features/notification/ui/screens/notification_view.dart';
+import '../../features/on_boarding/ui/screen/on_boarding_screen.dart';
+import '../../features/on_boarding/ui/screen/select_type_screen.dart';
 import '../../features/reservation/ui/screens/edit_reservation_view.dart';
 import '../../features/reservation/ui/screens/reservation_view.dart';
 import '../../features/service/ui/screens/service_screen.dart';
@@ -33,6 +35,15 @@ class AppRouter {
       case AppRoute.splashScreen:
         return CupertinoPageRoute(
           builder: (_) => const SplashScreen(),
+        );
+      case AppRoute.onBoardingScreen:
+        return CupertinoPageRoute(
+          builder: (_) => const OnBoardingScreen(),
+        );
+      //SelectTypeScreen
+      case AppRoute.selectTypeScreen:
+        return CupertinoPageRoute(
+          builder: (_) => const SelectTypeScreen(),
         );
 
       //auth

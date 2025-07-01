@@ -10,7 +10,6 @@ import '../../../../../core/thems/thems.dart';
 import '../../../../../core/widget/padding_nav_bar.dart';
 import '../../../../../core/widget/padding_utils.dart';
 import '../../../../../core/widget/text_utils.dart';
-import '../../../login/ui/widgets/login/login_phone_number_widget.dart';
 import '../widget/sign_up_data_input_screen.dart';
 import '../widget/signup_button_widget.dart';
 
@@ -22,8 +21,11 @@ class SignUpScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           actions: [
-            AnimatedSvgIcon(
-              iconPath: 'assets/svgs/Logo-2.svg',
+            Container(
+              width: 100.w,
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/logo.png'))),
             ),
             horizontalSpace(20),
           ],

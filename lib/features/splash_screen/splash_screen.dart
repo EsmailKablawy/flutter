@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:event/core/helpers/extensions.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../core/cache/cach_Helper.dart';
 import '../../core/helpers/constants.dart';
@@ -49,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen>
             CacheHelper.savelang('ar');
             // ignore: use_build_context_synchronously
             context.pushNamedAndRemoveUntil(
-              AppRoute.signUpScreen,
+              AppRoute.onBoardingScreen,
               predicate: (route) => false,
             );
 
@@ -101,8 +102,8 @@ class _SplashScreenState extends State<SplashScreen>
                 duration: const Duration(seconds: 4),
                 height: _value ? 50 : 200,
                 width: _value ? 50 : 200,
-                child:
-                    Center(child: Image.asset('assets/images/eventlogo.png')),
+                child: Center(
+                    child: Image.asset('assets/images/C3_page-0001 1.png')),
               ),
             ),
           ),

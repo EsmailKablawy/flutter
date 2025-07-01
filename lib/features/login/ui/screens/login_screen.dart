@@ -29,8 +29,11 @@ class LoginScreen extends StatelessWidget {
         appBar: AppBar(
           leading: const Text(''),
           actions: [
-            AnimatedSvgIcon(
-              iconPath: 'assets/svgs/Logo-2.svg',
+            Container(
+              width: 100.w,
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/logo.png'))),
             ),
             horizontalSpace(20),
           ],
@@ -136,7 +139,9 @@ class LoginScreen extends StatelessWidget {
                             prefix: Padding(
                               padding: EdgeInsets.all(13.w),
                               child: SvgPicture.asset(
-                                  'assets/svgs/password_log.svg'),
+                                'assets/svgs/password_log.svg',
+                                color: mainColor,
+                              ),
                             ),
                             controller:
                                 context.read<LoginCubit>().controller.password,

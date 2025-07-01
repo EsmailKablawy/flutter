@@ -71,7 +71,7 @@ class HomeSliderWidget extends StatelessWidget {
                           child: TextUtils(
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
-                              color: blackcolor,
+                              color: Colors.white,
                               text: 'انشاء مناسبة الان'.tr()),
                         ),
                       ),

@@ -1,5 +1,8 @@
 class AppRoute {
   static const String splashScreen = '/';
+  static const String onBoardingScreen = '/onBoardingScreen';
+  //SelectTypeScreen
+  static const String selectTypeScreen = '/selectTypeScreen';
 
   //auth
   static const String loginScreen = '/loginScreen';

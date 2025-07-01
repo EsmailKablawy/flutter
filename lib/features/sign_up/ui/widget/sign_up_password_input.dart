@@ -61,7 +61,8 @@ class SignUpPasswordInput extends StatelessWidget {
                         ),
                   prefix: Padding(
                     padding: EdgeInsets.all(13.w),
-                    child: SvgPicture.asset('assets/svgs/password_log.svg'),
+                    child: SvgPicture.asset(
+                        color: mainColor, 'assets/svgs/password_log.svg'),
                   ),
                   controller: context.read<LoginCubit>().controller.password,
                   obscureText: context.read<LoginCubit>().passwordShow,
@@ -114,7 +115,8 @@ class SignUpPasswordInput extends StatelessWidget {
                         ),
                   prefix: Padding(
                     padding: EdgeInsets.all(13.w),
-                    child: SvgPicture.asset('assets/svgs/password_log.svg'),
+                    child: SvgPicture.asset(
+                        color: mainColor, 'assets/svgs/password_log.svg'),
                   ),
                   controller:
                       context.read<LoginCubit>().controller.confirmpassword,

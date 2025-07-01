@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color mainColor = Color(0xFFE09FA3);
-//background: #;
+const Color mainColor = Color(0xFF761CBC);
 
 const Color blueColor = Color(0xFF2664B1);
 const Color redAndOrangeColor = Color(0xFFF4827E);

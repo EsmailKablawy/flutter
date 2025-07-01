@@ -27,9 +27,9 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // suggest_for_you
-                  // const SuggestWidget(),
-                  // verticalSpace(20),
+                  //events
+                  const EventsWidget(),
+                  verticalSpace(10),
                   //my Services
                   const MyServiceWidget(),
                   verticalSpace(20),
@@ -52,9 +52,7 @@ class HomeScreen extends StatelessWidget {
                     color: greyClr.withOpacity(0.4),
                   ),
                   verticalSpace(10),
-                  //events
-                  const EventsWidget(),
-                  verticalSpace(10),
+
                   //bannar
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
