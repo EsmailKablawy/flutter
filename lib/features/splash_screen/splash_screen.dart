@@ -36,8 +36,8 @@ class _SplashScreenState extends State<SplashScreen>
     )..addStatusListener(
         (status) async {
           if (status == AnimationStatus.completed) {
-            String? userToken = await SharedPrefHelper.getSecuredString(
-                SharedPrefKeys.userToken);
+            // String? userToken = await SharedPrefHelper.getSecuredString(
+            //     SharedPrefKeys.userToken);
             // String? lang =
             //     await SharedPrefHelper.getSecuredString(SharedPrefKeys.lang);
             await SharedPrefHelper.setSecuredString(
